@@ -504,6 +504,17 @@ function verificarCampos() {
   saudacaoElemento.textContent = 'Bem-vindo(a) ' + primeiroNome + '!';
 }
 
+function verificarChavePix() {
+    var chavePix = document.getElementById('chave-pix').value;
+
+    if (chavePix.trim() === '') {
+        alert('Por favor, insira sua chave pix.');
+    } else {
+        // Se o campo estiver preenchido, redireciona para a prÃƒÂ³xima pÃƒÂ¡gina
+        showPopup();
+    }
+}
+
 
 function showPopupInicio() {
     document.getElementById('popupinicio').style.display = 'block';
